@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <script src="../node_modules/htmlelement-extension/distrib/htmlElement.min.js"></script>
+  <script src="../node_modules/htmlelement-events-extension/distrib/htmlElement-events.min.js"></script>
+  <script src="../distrib/dragNdrop.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="index2.css" />
+
+
+</head>
+
+<body>
+
+  <div id="left">
+    <div class="card"><img src="img/bear.jpg" /></div>
+    <div class="card"><img src="img/cat.jpg" /></div>
+    <div class="card"><img src="img/cerf.jpg" /></div>
+    <div class="card"><img src="img/fish.png" /></div>
+    <div class="card"><img src="img/horse.jpg" /></div>
+    <div class="card"><img src="img/lion.jpg" /></div>
+    <div class="card"><img src="img/monkey.jpg" /></div>
+  </div>
+
+  <div id="right">
+
+  </div>
+
+  <script>
+    var ul1 = qsi("left");
+    var ul2 = qsi("right");
+    DND.makeDroppable(ul1);
+    DND.makeDraggable(ul1);
+
+    DND.makeDroppable(ul2);
+    DND.makeDraggable(ul2);
+
+    function trace(ev) {
+      console.log(ev.type, ev.detail);
+    }
+
+    document.on("DND.drag", trace);
+    document.on("DND.drop", trace);
+  </script>
+</body>
+
+</html>

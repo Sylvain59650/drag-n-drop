@@ -1,0 +1,32 @@
+#ul1,
+#ul2,
+#ul3 {
+  min-height: 200px;
+  max-height: 200px;
+  min-width: 200px;
+  max-width: 200px;
+  display: table-cell;
+  border: solid 1px gray;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+li {
+  background-color: yellow;
+  list-style-type: none;
+}
+
+li[draggable='false'] {
+  background-color: gray;
+}
+
+#left,
+#right {
+  min-height: 200px;
+  max-height: 700px;
+  min-width: 280px;
+  max-width: 280px;
+  display: inline-block;
+  border: solid 1px gray;
+  overflow-y: scroll;
+}

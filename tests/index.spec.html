@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<script src="../node_modules/htmlelement-extension/distrib/htmlElement.min.js"></script>
+<script src="../node_modules/htmlelement-events-extension/distrib/htmlElement-events.min.js"></script>
+<script src="../distrib/dragNdrop.min.js"></script>
+
+<head>
+  <script>
+  </script>
+</head>
+
+<body>
+  <style>
+    #ul1,
+    #ul2,
+    #ul3 {
+      min-height: 100px;
+      min-width: 200px;
+      border: solid 1px gray;
+    }
+    
+    li {
+      background-color: yellow;
+    }
+  </style>
+  <ul id="ul1">
+
+  </ul>
+
+
+  <ul id="ul2">
+    <li v="1">elem1</li>
+    <li v="2"> elem2</li>
+
+  </ul>
+
+  <ul id="ul3">
+    <li id="e3" v="3">elem3</li>
+    <li id="e4" v="4">elem4</li>
+  </ul>
+
+  <script>
+    var ul1 = qs("#ul1");
+    var ul2 = qs("#ul2");
+    var ul3 = qs("#ul3");
+    DND.makeDroppable(ul1);
+
+    DND.makeDraggable(ul3);
+    DND.makeDroppable(ul3);
+
+    DND.makeDraggable(ul2);
+    DND.makeDroppable(ul2);
+
+    function allowDrop(evt) {
+      evt.preventDefault();
+      if (evt.toElement.id === "ul1") {
+        return false;
+      }
+      var vsource = parseInt(DND.srcElement.attr("v"), 10); // parseInt(evt.srcElement.attr("v"), 10);
+      var target = evt.toElement;
+      var vtarget = parseInt(target.attr("v") || "50", 10);
+      console.log(vsource < vtarget);
+      return vsource < vtarget;
+    }
+
+    // DND.allowDropCallback = allowDrop;
+  </script>
+</body>
+
+</html>

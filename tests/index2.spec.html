@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <script src="../node_modules/htmlelement-extension/distrib/htmlElement.min.js"></script>
+  <script src="../node_modules/htmlelement-events-extension/distrib/htmlElement-events.min.js"></script>
+  <script src="../distrib/dragNdrop.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="index2.css" />
+
+
+</head>
+
+<body>
+
+  <ul id="ul1">
+    <li v="1">elem1</li>
+    <li v="2"> elem2</li>
+    <li v="3">elem3</li>
+    <li v="4"> elem4</li>
+    <li v="5">elem5</li>
+    <li v="6"> elem6</li>
+    <li v="7">elem7</li>
+    <li v="8"> elem8</li>
+    <li v="9">elem9</li>
+    <li v="10"> elem10</li>
+  </ul>
+  <ul id="ul2">
+
+  </ul>
+
+  <img src="img/trash.png" id="trash" />
+
+
+  <script>
+    var ul1 = qsi("ul1");
+    var ul2 = qsi("ul2");
+    var trash = qs("#trash");
+    DND.makeDroppable(ul1);
+    DND.makeDraggable(ul1);
+
+    DND.makeDroppable(ul2);
+    DND.makeDraggable(ul2);
+
+    DND.makeDroppable(trash, {
+      remove: true
+    });
+  </script>
+</body>
+
+</html>
