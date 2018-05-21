@@ -1,8 +1,8 @@
 {
   "name": "drag-n-drop",
   "version": "0.8.0",
-  "description": "mm",
-  "main": "gulpfile.js",
+  "description": "Easy drag & drop operations",
+  "main": "distrib/dragNdrop.min.js",
   "scripts": {
     "test": "exit 0"
   },
