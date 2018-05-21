@@ -2,7 +2,7 @@
   "name": "htmlelement-dnd",
   "version": "0.8.0",
   "description": "Easy drag & drop operations",
-  "main": "distrib/dragNdrop.min.js",
+  "main": "distrib/htmlelement-dnd.min.js",
   "scripts": {
     "test": "exit 0"
   },
@@ -13,7 +13,7 @@
   "keywords": [
     "drag",
     "drop",
-    "dragndrop"
+    "dragndrop","dnd"
   ],
   "author": "Sylvain LONGEPEE",
   "license": "MIT",
