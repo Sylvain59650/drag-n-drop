@@ -34,8 +34,13 @@ or
 
 ## Availables Operations
 
-    - DND.makeDroppable(container) : create the container droppable, elements draggables can be drop on this zone. 
+    - DND.makeDroppable(container,options) : create the container droppable, elements draggables can be drop on this zone. 
+        - options : set remove property to true to remove element on drop 
     - DND.makeDraggable(container) : declare all children of container as element draggable
+
+    - DND.allowDropCallback : function called to allow/disallow drop dragging element. Must return boolean.
+
+
 
 ## Specials Events
     - DND.drag : called when the drag operation start
