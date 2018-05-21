@@ -10,11 +10,11 @@ const chemins = {
 
 
 
-gulp.task("dragNdrop.min.js", () => {
+gulp.task("htmlelement-dnd.min.js", () => {
   return gulp.src([
       "node_modules/isnotnull/distrib/isdef.js", "src/**.js"
     ])
-    .pipe(concat("dragNdrop.min.js"))
+    .pipe(concat("htmlelement-dnd.min.js"))
     .pipe(babel({
       presets: ["es2015"],
       compact: false,
@@ -28,15 +28,15 @@ gulp.task("dragNdrop.min.js", () => {
 });
 
 
-gulp.task("watch:dragNdrop.min.js", function() {
+gulp.task("watch:htmlelement-dnd.min.js", function() {
   watch("./src/**.js", function() {
-    gulp.run("dragNdrop.min.js");
+    gulp.run("htmlelement-dnd.min.js");
   });
 });
 
-gulp.task("default", ["dragNdrop.min.js"]);
+gulp.task("default", ["htmlelement-dnd.min.js"]);
 
 
 gulp.task("all", ["default"]);
 
-gulp.task("watch", ["watch:dragNdrop.min.js"]);
+gulp.task("watch", ["watch:htmlelement-dnd.min.js"]);
