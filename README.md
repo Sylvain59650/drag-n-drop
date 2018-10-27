@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/bundlephobia/min/htmlelement-dnd.svg" />
     <img src="https://img.shields.io/badge/eslint-ok-blue.svg" />
     <a target="_blank" title="tests" href="https://sylvain59650.github.io/htmlelement-dnd/"><img src="https://img.shields.io/badge/tests-passing-brightgreen.svg" /></a>
-    <a target="_blank" title="downloads" href="https://www.jsdelivr.com/package/npm/htmlelement-dnd"><img src="https://data.jsdelivr.com/v1/package/npm/htmlelement-dnd/badge" /></a>
+    <a href="https://codeclimate.com/github/Sylvain59650/htmlelement-dnd/maintainability"><img src="https://api.codeclimate.com/v1/badges/0758766d5576a6488588/maintainability" /></a><a target="_blank" title="downloads" href="https://www.jsdelivr.com/package/npm/htmlelement-dnd"><img src="https://data.jsdelivr.com/v1/package/npm/htmlelement-dnd/badge" /></a>
     <a target="_blank" title="cdn" href="https://cdn.jsdelivr.net/npm/htmlelement-dnd/distrib/htmlelement-dnd.min.js"><img src="https://img.shields.io/badge/cdn-jsdeliv-black.svg" /></a>
     <img src="https://img.shields.io/npm/l/htmlelement-dnd.svg" />
     <img src="https://hits.dwyl.com/Sylvain59650/htmlelement-dnd.svg" />
@@ -85,4 +85,6 @@ or
     </script>
 
 
-**Note See all examples on github**
+
+# Usage
+  <a href="https://sylvain59650.github.io/htmlelement-dnd/">API &amp; DEMO</a>

@@ -1,6 +1,6 @@
 {
   "name": "htmlelement-dnd",
-  "version": "0.8.2",
+  "version": "0.8.1",
   "description": "Easy drag & drop operations",
   "main": "distrib/htmlelement-dnd.min.js",
   "scripts": {
@@ -14,7 +14,8 @@
     "drag",
     "drop",
     "dragndrop",
-    "dnd","front-end"
+    "dnd",
+    "front-end"
   ],
   "author": "sylvain59",
   "maintainers": [
@@ -41,11 +42,11 @@
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.1",
     "gulp-concat": "^2.6.1",
-    "gulp-watch": "^5.0.0"
+    "gulp-watch": "^5.0.1"
   },
   "dependencies": {
-    "htmlelement-events-extension": "^0.9.8",
-    "htmlelement-extension": "^0.8.8",
+    "htmlelement-events-extension": "^0.9.10",
+    "htmlelement-extension": "^0.8.12",
     "isnotnull": "^0.8.0"
   }
 }
