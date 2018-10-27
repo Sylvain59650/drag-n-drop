@@ -14,6 +14,9 @@
 li {
   background-color: yellow;
   list-style-type: none;
+  padding: 5px;
+  margin: 1px;
+  border: solid 2px gold;
 }
 
 li[draggable='false'] {
@@ -29,4 +32,9 @@ li[draggable='false'] {
   display: inline-block;
   border: solid 1px gray;
   overflow-y: scroll;
+}
+
+.space {
+  display: inline-block;
+  width: 50px;
 }

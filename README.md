@@ -1,17 +1,19 @@
  # htmlelement-dnd
  
- <div style="display:inline">
-
-[![build](https://travis-ci.org/Sylvain59650/htmlelement-dnd.png?branch=master)](https://travis-ci.org/Sylvain59650/htmlelement-dnd)
-![version](https://img.shields.io/npm/v/htmlelement-dnd.svg)
-![package](https://img.shields.io/github/package-json/v/Sylvain59650/htmlelement-dnd.svg)
-![dependencies](https://img.shields.io/david/Sylvain59650/htmlelement-dnd.svg)
-![minified](https://img.shields.io/bundlephobia/min/htmlelement-dnd.svg)
-![linter](https://img.shields.io/badge/eslint-ok-blue.svg)
-![tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)
-![license](https://img.shields.io/npm/l/htmlelement-dnd.svg)
-[![hits](http://hits.dwyl.com/Sylvain59650/htmlelement-dnd.svg)](http://hits.dwyl.com/Sylvain59650/htmlelement-dnd)
-</div>
+  <div style="display:inline">
+    <a target="_blank" title="build" href="https://travis-ci.org/Sylvain59650/htmlelement-dnd"><img src="https://travis-ci.org/Sylvain59650/htmlelement-dnd.png?branch=master" /></a>
+    <a target="_blank" title="version" href="https://www.npmjs.com/package/htmlelement-dnd"><img src="https://img.shields.io/npm/v/htmlelement-dnd.svg" /></a>
+    <a target="_blank" title="package" href="https://github.com/Sylvain59650/htmlelement-dnd"><img src="https://img.shields.io/github/package-json/v/Sylvain59650/htmlelement-dnd.svg" /></a>
+    <a target="_blank" title="dependencies" href="https://david-dm.org/Sylvain59650/htmlelement-dnd"><img src="https://img.shields.io/david/Sylvain59650/htmlelement-dnd.svg" /></a>
+    <a target="_blank" title="dependencies graph" href="http://npm.anvaka.com/#/view/2d/htmlelement-dnd"><img src="https://img.shields.io/badge/dependencies-graph-blue.svg" /></a>
+    <img src="https://img.shields.io/bundlephobia/min/htmlelement-dnd.svg" />
+    <img src="https://img.shields.io/badge/eslint-ok-blue.svg" />
+    <a target="_blank" title="tests" href="https://sylvain59650.github.io/htmlelement-dnd/"><img src="https://img.shields.io/badge/tests-passing-brightgreen.svg" /></a>
+    <a target="_blank" title="downloads" href="https://www.jsdelivr.com/package/npm/htmlelement-dnd"><img src="https://data.jsdelivr.com/v1/package/npm/htmlelement-dnd/badge" /></a>
+    <a target="_blank" title="cdn" href="https://cdn.jsdelivr.net/npm/htmlelement-dnd/distrib/htmlelement-dnd.min.js"><img src="https://img.shields.io/badge/cdn-jsdeliv-black.svg" /></a>
+    <img src="https://img.shields.io/npm/l/htmlelement-dnd.svg" />
+    <img src="https://hits.dwyl.com/Sylvain59650/htmlelement-dnd.svg" />
+  </div>
  
  
  <div class="Note" style="color:orange;font-style:italic">
@@ -27,6 +29,9 @@ or
 
     yarn add htmlelement-dnd --save
 
+## Without installation
+
+    <script src="https://cdn.jsdelivr.net/npm/htmlelement-dnd/distrib/htmlelement-dnd.min.js"></script>
 
 ## Prerequisites for browser
 

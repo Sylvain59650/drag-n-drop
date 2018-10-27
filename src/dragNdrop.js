@@ -44,7 +44,7 @@ DND.drag = function(ev) {
 
 DND.cloneNode = function(elem) {
   var clone = document.importNode(elem, true);
-  //id
+  clone.id = DND.nextId();
   return clone;
 }
 
