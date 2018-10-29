@@ -2,148 +2,88 @@
 
 <head>
   <title>htmlelement-dnd</title>
-  <link href="https://sylvain59650.github.io/demonstrator/css/demo.css" type="text/css" rel="stylesheet" />
-  <link href="https://sylvain59650.github.io/demonstrator/css/style.css" type="text/css" rel="stylesheet" />
+  <link href="https://sylvain59650.github.io/demonstrator/css/theme1.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
-  <h1>
-    htmlelement-dnd
-  </h1>
-  <div class="breadcrumb">
-    <a href="https://www.npmjs.com/package/htmlelement-dnd" title="NPM">
-      <img src="https://sylvain59650.github.io/demonstrator/img/npm.png" height="32"></a>
-    <a href="https://github.com/Sylvain59650/htmlelement-dnd" title="GitHub"><img src="https://github.com/favicon.ico" height="32" /></a>
+  <div class="container">
+    <h1>htmlelement-dnd</h1>
+
+    <div>
+      <a href="https://www.npmjs.com/package/htmlelement-dnd" title="NPM">
+        <img src="https://sylvain59650.github.io/demonstrator/img/npm.png" height="32"></a>
+      <a href="https://github.com/Sylvain59650/htmlelement-dnd" title="GitHub"><img src="https://github.com/favicon.ico" height="32" /></a>
+    </div>
+
+    <div style="display:inline-block;margin-bottom:20px">
+      <a target="_blank" title="build" href="https://travis-ci.org/Sylvain59650/htmlelement-dnd"><img src="https://travis-ci.org/Sylvain59650/htmlelement-dnd.png?branch=master" /></a>
+      <a target="_blank" title="version" href="https://www.npmjs.com/package/htmlelement-dnd"><img src="https://img.shields.io/npm/v/htmlelement-dnd.svg" /></a>
+      <a target="_blank" title="package" href="https://github.com/Sylvain59650/htmlelement-dnd"><img src="https://img.shields.io/github/package-json/v/Sylvain59650/htmlelement-dnd.svg" /></a>
+      <a target="_blank" title="dependencies" href="https://david-dm.org/Sylvain59650/htmlelement-dnd"><img src="https://img.shields.io/david/Sylvain59650/htmlelement-dnd.svg" /></a>
+      <a target="_blank" title="dependencies graph" href="http://npm.anvaka.com/#/view/2d/htmlelement-dnd"><img src="https://img.shields.io/badge/dependencies-graph-blue.svg" /></a>
+      <img src="https://img.shields.io/bundlephobia/min/htmlelement-dnd.svg" />
+      <img src="https://img.shields.io/badge/eslint-ok-blue.svg" />
+      <a target="_blank" title="tests" href="https://sylvain59650.github.io/htmlelement-dnd/"><img src="https://img.shields.io/badge/tests-passing-brightgreen.svg" /></a>
+      <a href="https://codeclimate.com/github/Sylvain59650/htmlelement-dnd/maintainability"><img src="https://api.codeclimate.com/v1/badges/0758766d5576a6488588/maintainability" /></a>
+      <a target="_blank" title="downloads" href="https://www.jsdelivr.com/package/npm/htmlelement-dnd"><img src="https://data.jsdelivr.com/v1/package/npm/htmlelement-dnd/badge" /></a>
+      <a target="_blank" title="cdn" href="https://cdn.jsdelivr.net/npm/htmlelement-dnd/distrib/htmlelement-dnd.min.js"><img src="https://img.shields.io/badge/cdn-jsdeliv-black.svg" /></a>
+      <img src="https://img.shields.io/npm/l/htmlelement-dnd.svg" />
+      <img src="https://hits.dwyl.com/Sylvain59650/htmlelement-dnd.svg" />
+    </div>
+
+    <nav>
+      <li><a href="#makeDraggable">makeDraggable</a></li>
+      <li><a href="#makeDroppable">makeDroppable</a></li>
+      <li><a href="#usage">Usage</a></li>
+    </nav>
+
+    <article id="makeDraggable">
+      <h2>makeDraggable</h2>
+      <div class="signature">
+        <p>DND.makeDraggable(elem)</p>
+      </div>
+      <div class="arg">
+        <p>elem: htmlelement that we want to make draggable</p>
+      </div>
+    </article>
+
+    <article id="makeDroppable">
+      <h2>makeDroppable</h2>
+      <div class="signature">
+        <p>DND.makeDroppable(elem,options)</p>
+      </div>
+      <div class="arg">
+        <p>elem: html zone that can receive other elements via drag and drop</p>
+        <p>options</p>
+      </div>
+    </article>
+
+    <article id="usage">
+      <h2>usage</h2>
+      <xmp style="color:white">
+        <ul id="ul1">
+          <li v="1">elem1</li>
+          <li v="2"> elem2</li>
+          <li v="3">elem3</li>
+          <li v="4"> elem4</li>
+          <li v="5">elem5</li>
+          <li v="6"> elem6</li>
+          <li v="7">elem7</li>
+          <li v="8"> elem8</li>
+          <li v="9">elem9</li>
+          <li v="10"> elem10</li>
+        </ul>
+
+        <ul id="ul2"></ul>
+        <script>
+          var ul1 = document.querySelector("#ul1");
+          var ul2 = document.querySelector("#ul2");
+          DND.makeDraggable(ul1);
+          DND.makeDroppable(ul2);
+        </script>
+      </xmp>
+    </article>
   </div>
-
-  <div style="display:inline-block;margin-bottom:20px">
-    <a target="_blank" title="build" href="https://travis-ci.org/Sylvain59650/htmlelement-dnd"><img src="https://travis-ci.org/Sylvain59650/htmlelement-dnd.png?branch=master" /></a>
-    <a target="_blank" title="version" href="https://www.npmjs.com/package/htmlelement-dnd"><img src="https://img.shields.io/npm/v/htmlelement-dnd.svg" /></a>
-    <a target="_blank" title="package" href="https://github.com/Sylvain59650/htmlelement-dnd"><img src="https://img.shields.io/github/package-json/v/Sylvain59650/htmlelement-dnd.svg" /></a>
-    <a target="_blank" title="dependencies" href="https://david-dm.org/Sylvain59650/htmlelement-dnd"><img src="https://img.shields.io/david/Sylvain59650/htmlelement-dnd.svg" /></a>
-    <a target="_blank" title="dependencies graph" href="http://npm.anvaka.com/#/view/2d/htmlelement-dnd"><img src="https://img.shields.io/badge/dependencies-graph-blue.svg" /></a>
-    <img src="https://img.shields.io/bundlephobia/min/htmlelement-dnd.svg" />
-    <img src="https://img.shields.io/badge/eslint-ok-blue.svg" />
-    <a target="_blank" title="tests" href="https://sylvain59650.github.io/htmlelement-dnd/"><img src="https://img.shields.io/badge/tests-passing-brightgreen.svg" /></a>
-    <a href="https://codeclimate.com/github/Sylvain59650/htmlelement-dnd/maintainability"><img src="https://api.codeclimate.com/v1/badges/0758766d5576a6488588/maintainability" /></a>
-    <a target="_blank" title="downloads" href="https://www.jsdelivr.com/package/npm/htmlelement-dnd"><img src="https://data.jsdelivr.com/v1/package/npm/htmlelement-dnd/badge" /></a>
-    <a target="_blank" title="cdn" href="https://cdn.jsdelivr.net/npm/htmlelement-dnd/distrib/htmlelement-dnd.min.js"><img src="https://img.shields.io/badge/cdn-jsdeliv-black.svg" /></a>
-    <img src="https://img.shields.io/npm/l/htmlelement-dnd.svg" />
-    <img src="https://hits.dwyl.com/Sylvain59650/htmlelement-dnd.svg" />
-  </div>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: black;
-    }
-    
-    h1 {
-      padding: 10px;
-      font-size: 25pt;
-      color: gray;
-      margin-bottom: 15px;
-    }
-    
-    .signature>p {
-      margin-left: 25px;
-      background-color: #ffffff;
-      vertical-align: text-bottom;
-      margin-top: 0px;
-      padding-left: 10px;
-      padding-right: 10px;
-      color: royalblue;
-      font-size: 12pt;
-    }
-    
-    .signature {
-      font-weight: bolder;
-      background-color: dodgerblue;
-      color: black;
-      display: flex;
-      border-radius: 5px;
-      margin: 10px;
-      padding: 5px;
-      font-size: 10pt;
-      margin-right: 20px;
-    }
-    
-    .arg {
-      display: flex;
-      background-color: darksalmon
-    }
-    
-    .arg>p {
-      margin-left: 15px;
-      background-color: #ffffff;
-      vertical-align: text-bottom;
-      margin-top: 0px;
-      padding-left: 10px;
-      padding-right: 10px;
-      color: royalblue;
-      font-size: 12pt;
-      display: block;
-      padding-bottom: 5px;
-    }
-    
-    nav>li {
-      display: inline;
-      max-width: 30%;
-      border-radius: 0;
-    }
-  </style>
-  <nav>
-    <li><a href="#makeDraggable">makeDraggable</a></li>
-    <li><a href="#makeDroppable">makeDroppable</a></li>
-    <li><a href="#usage">Usage</a></li>
-  </nav>
-
-  <article id="makeDraggable">
-    <h2>makeDraggable</h2>
-    <div class="signature">
-      <p>DND.makeDraggable(elem)</p>
-    </div>
-    <div class="arg">
-      <p>elem: htmlelement that we want to make draggable</p>
-    </div>
-  </article>
-
-  <article id="makeDroppable">
-    <h2>makeDroppable</h2>
-    <div class="signature">
-      <p>DND.makeDroppable(elem,options)</p>
-    </div>
-    <div class="arg">
-      <p>elem: html zone that can receive other elements via drag and drop</p>
-      <p>options</p>
-    </div>
-  </article>
-
-  <article id="usage">
-    <h2>usage</h2>
-    <xmp style="color:white">
-      <ul id="ul1">
-        <li v="1">elem1</li>
-        <li v="2"> elem2</li>
-        <li v="3">elem3</li>
-        <li v="4"> elem4</li>
-        <li v="5">elem5</li>
-        <li v="6"> elem6</li>
-        <li v="7">elem7</li>
-        <li v="8"> elem8</li>
-        <li v="9">elem9</li>
-        <li v="10"> elem10</li>
-      </ul>
-
-      <ul id="ul2"></ul>
-      <script>
-        var ul1 = document.querySelector("#ul1");
-        var ul2 = document.querySelector("#ul2");
-        DND.makeDraggable(ul1);
-        DND.makeDroppable(ul2);
-      </script>
-    </xmp>
-  </article>
 </body>
 
 </html>

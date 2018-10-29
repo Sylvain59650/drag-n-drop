@@ -53,6 +53,7 @@ or
 
 
 ## usage 
+```html
     <div id="left">
         <div class="card"><img src="img/bear.jpg" /></div>
         <div class="card"><img src="img/cat.jpg" /></div>
@@ -83,7 +84,7 @@ or
         document.on("DND.drag", trace);
         document.on("DND.drop", trace);
     </script>
-
+```
 
 
 # Usage
