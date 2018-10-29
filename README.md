@@ -30,12 +30,14 @@ or
     yarn add htmlelement-dnd --save
 
 ## Without installation
-
+```html
     <script src="https://cdn.jsdelivr.net/npm/htmlelement-dnd/distrib/htmlelement-dnd.min.js"></script>
+```
 
 ## Prerequisites for browser
-
+```html
     <script src="node_modules/htmlelement-dnd/distrib/htmlelement-dnd.min.js"></script>
+```
 
 ## Availables Operations
 
@@ -52,7 +54,7 @@ or
     - DND.drop : called when the drop operation end
 
 
-## usage 
+## example 
 ```html
     <div id="left">
         <div class="card"><img src="img/bear.jpg" /></div>
