@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "htmlelement-events-extension": "^0.9.10",
-    "htmlelement-extension": "^0.8.12",
+    "htmlelement-extension": "^0.8.13",
     "isnotnull": "^0.8.0"
   }
 }

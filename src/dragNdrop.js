@@ -39,7 +39,7 @@ DND.drag = function(ev) {
   }
   ev.dataTransfer.setData("text", src.id);
   DND.srcElement = src;
-  document.fireEvent("DND.drag", { src: DND.srcElement });
+  document.trigger("DND.drag", { src: DND.srcElement });
 }
 
 DND.cloneNode = function(elem) {
@@ -86,7 +86,7 @@ DND.drop = function(ev) {
     }
     target.beforeBegin(src);
   }
-  document.fireEvent("DND.drop", { src: src, target: target });
+  document.trigger("DND.drop", { src: src, target: target });
 }
 
 DND.removeDraggableChild = function(child) {

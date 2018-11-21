@@ -27,7 +27,7 @@ gulp.task("htmlelement-dnd.min.js", () => {
     .pipe(gulp.dest(chemins.demo + "/modules/htmlelement-dnd/distrib/"))
 });
 
-gulp.task("release", (arg1, arg2) => {
+gulp.task("release", function(arg1, arg2) {
   console.log("arg", arg1, arg2);
   return gulp.src([
       "node_modules/isnotnull/distrib/isdef.js",
